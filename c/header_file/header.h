@@ -1,0 +1,1 @@
+#define addnum(a, b) a + b

@@ -1,7 +1,7 @@
+/* coordinates.c */
 #include "coordinates.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /* Constructor */
 coordinate *coordinate_create(void)
 {
@@ -14,8 +14,8 @@ coordinate *coordinate_create(void)
 		c->x = 0;
 		c->y = 0;
 	}
+	return c;
 }
-
 /* Destructor */
 void coordinate_destroy(coordinate *this)
 {
@@ -24,8 +24,7 @@ void coordinate_destroy(coordinate *this)
 		free(this);
 	}
 }
-
-// Methods
+/* Methods */
 static void coordinate_setx(coordinate *this, int x)
 {
 	if (this != NULL)
@@ -33,7 +32,6 @@ static void coordinate_setx(coordinate *this, int x)
 		this->x = x;
 	}
 }
-
 static void coordinate_sety(coordinate *this, int y)
 {
 	if (this != NULL)
@@ -41,7 +39,6 @@ static void coordinate_sety(coordinate *this, int y)
 		this->y = y;
 	}
 }
-
 static void coordinate_print(coordinate *this)
 {
 	if (this != NULL)
