@@ -1,9 +1,9 @@
-typedef struct coordinate_s
+typedef struct coordinate
 {
 	/* Pointers to method functions */
-	void (*setx)(coordinate *this, int x);
-	void (*sety)(coordinate *this, int y);
-	void (*print)(coordinate *this);
+	void (*setx)(struct coordinate *this, int x);
+	void (*sety)(struct coordinate *this, int y);
+	void (*print)( struct coordinate *this);
 	/* Data */
 	int x;
 	int y;
