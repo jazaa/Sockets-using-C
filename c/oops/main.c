@@ -1,6 +1,6 @@
 #include "coordinates.h"
 #include <stddef.h>
-int main(void)
+int main(int argc, char *argv[])
 {
     /* Create and initialize pointers to coordinate objects */
     coordinate *c1 = coordinate_create();
