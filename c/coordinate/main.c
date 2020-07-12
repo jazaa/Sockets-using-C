@@ -3,8 +3,8 @@
 int main(int argc, char *argv[])
 {
     /* Create and initialize pointers to coordinate objects */
-    coordinate *c1 = coordinate_create();
-    coordinate *c2 = coordinate_create();
+    coordinate* c1 = coordinate_create();
+    coordinate* c2 = coordinate_create();
     /* Now we can use our objects using our methods and passing the object as parameter */
     c1->setx(c1, 1);
     c1->sety(c1, 2);
