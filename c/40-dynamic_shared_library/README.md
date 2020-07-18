@@ -1,0 +1,1 @@
+gcc -c moo.c && ar -cvq libmoo.a moo.c && nm libmoo.a && ranlib libmoo.a && gcc -o foo foo.c libmoo.a && ldd foo && nm foo
